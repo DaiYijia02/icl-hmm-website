@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Pre-trained Large Language Models Learn Hidden Markov Models In-context">
+  <meta name="keywords" content="In-context learning, LLM, Hidden Markov models, Neuroscience, Decision-making, Animal behavior">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pre-trained Large Language Models Learn <em>Hidden</em> Markov Models In-context</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://daiyijia02.github.io">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <!-- <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="">
+            Name
+          </a>
+        </div>
+      </div> -->
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Pre-trained Large Language Models Learn <em>Hidden</em> Markov Models In-context</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://daiyijia02.github.io">Yijia Dai</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://zhaolingao.github.io">Zhaolin Gao</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://yahya-sattar.github.io">Yahya Sattar</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://sdean.website">Sarah Dean</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://jenjsun.com">Jennifer J. Sun</a>,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Cornell University</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/DaiYijia02/icl-hmm"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img id="summary" src="./static/images/summary.png" alt="Summary" height="100%">
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Hidden Markov Models (HMMs) are foundational tools for modeling sequential data with latent Markovian structure, yet fitting them to real-world data remains computationally challenging.
+            In this work, we show that pre-trained large language models (LLMs) can effectively model data generated by HMMs via in-context learning (ICL)—their ability to infer patterns from examples within a prompt.
+            On a diverse set of synthetic HMMs, LLMs achieve predictive accuracy approaching the theoretical optimum. We uncover novel scaling trends influenced by HMM properties, and offer theoretical conjectures for these empirical observations.  
+            We also provide practical guidelines for scientists on using ICL as a diagnostic tool for complex data. On real-world animal decision-making tasks, ICL achieves competitive performance with models designed by human experts. 
+            To our knowledge, this is the first demonstration that ICL can learn and predict HMM-generated sequences—an advance that deepens our understanding of in-context learning in LLMs and establishes its potential as a powerful tool for uncovering hidden structure in complex scientific data.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+
+        <!-- Convergence. -->
+        <h2 class="title is-3">In-context learning converges to theoretical optimum for learning HMMs</h2>
+        <div class="content has-text-justified">
+          <p>
+            We conduct systematic, controlled experiments on synthetic HMMs and empirically show that pre-trained LLMs outperform traditional statistical methods such as Baum–Welch. Moreover, their prediction accuracy consistently converges to the theoretical optimum—as given by the Viterbi algorithm with ground-truth model parameters—across a wide range of HMM configurations.
+          </p>
+        </div>
+        <div class="columns is-vcentered">
+          <img src="./static/images/convergence.png" alt="ICL convergence to theoretical optimum" height="100%">
+        </div>
+        <br/>
+        <!--/ Convergence. -->
+
+        <!-- Scaling trends. -->
+        <h2 class="title is-3">Scaling trends of in-context learning on HMMs</h2>
+        <div class="content has-text-justified">
+          <p>
+            We varied properties of HMMs, such as mixing rate and entropy.
+          </p>
+        </div>
+        <div class="columns is-vcentered">
+          <img src="./static/images/hmm_prop.png" alt="HMM properties" height="100%">
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            We identify and characterize empirical scaling trends showing that LLM performance improves with longer context windows, and that these trends are shaped by fundamental HMM properties such as mixing rate and entropy. We further provide theoretical conjectures to explain these phenomena, drawing connections to—and highlighting distinctions from—classical HMM learning paradigms, including spectral methods. These findings offer important insights into the learnability of stochastic systems through in-context learning.
+          </p>
+        </div>
+        <div class="columns is-vcentered">
+          <img src="./static/images/scaling.png" alt="Scaling trends" height="100%">
+        </div>
+        <!--/ Scaling trends. -->
+
+        <!-- Connection to real world. -->
+        <h2 class="title is-3">Connection to real world</h2>
+        <div class="content has-text-justified">
+          <p>
+            What's the connection between in-context learning and real-world HMMs? We translate our findings into practical guidelines for scientists, demonstrating how LLM in-context learning can serve as a diagnostic tool for assessing data complexity and uncovering underlying structure.
+          </p>
+        </div>
+        <div class="columns is-vcentered">
+          <img src="./static/images/icl_real_world.png" alt="ICL in real world" height="100%">
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            We tried two real-world tasks: animal decision-making and animal reward-learning.
+          </p>
+        </div>
+        <div class="columns is-vcentered">
+          <img src="./static/images/real_world_cat.png" alt="Real world tasks cartoon" height="100%">
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            We found that LLM ICL can perform competitively (under conditions found in the scaling trends) with domain-specific models developed by human experts.
+          </p>
+        </div>
+        <div class="columns is-vcentered">
+          <img src="./static/images/real_world_results.png" alt="Real world results" height="100%">
+        </div>
+        <!--/ Connection to real world. -->
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{dai2025icl-hmm,
+  author    = {Dai, Yijia and Gao, Zhaolin and Sattar, Yahya and Dean, Sarah and Sun, Jennifer J.},
+  title     = {Pre-trained Large Language Models Learn Hidden Markov Models In-context},
+  journal   = {arXiv},
+  year      = {2025},
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This means you are free to borrow the <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+            we just ask that you link back to this page in the footer.
+            Please remember to remove the analytics code included in the header of the website which
+            you do not want on your website.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
