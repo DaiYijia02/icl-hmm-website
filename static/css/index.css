@@ -1,5 +1,11 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&family=Google+Sans:wght@400;500;700&display=swap');
+
 body {
   font-family: 'Noto Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
 }
 
 
@@ -29,6 +35,10 @@ body {
 
 
 .publication-title {
+    font-family: 'Google Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 1.2;
 }
 
 .publication-banner {
@@ -47,12 +57,11 @@ body {
 .publication-header .hero-body {
 }
 
-.publication-title {
-    font-family: 'Google Sans', sans-serif;
-}
-
 .publication-authors {
     font-family: 'Google Sans', sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.4;
 }
 
 .publication-venue {
@@ -154,4 +163,21 @@ body {
 }
 #interpolation-image-wrapper img {
   border-radius: 5px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Google Sans', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h2.title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.content p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
 }
